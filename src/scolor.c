@@ -144,7 +144,7 @@ display_setup(void) {
 	}
 
 	scolor.display.font = TTF_OpenFont("./assets/Montserrat-Light.ttf", 150);
-	if(scolor.display.renderer == NULL) {
+	if(scolor.display.font == NULL) {
 		fprintf(stderr, "Unable to open font\n");
 		exit(EXIT_FAILURE);
 	}
